@@ -5,7 +5,7 @@ var path = require('path'),
 
 rootPath = path.normalize(__dirname + '/../..');
 
-var pjson = require('../../package.json');
+var pjson = require('../package.json');
 
 console.log('version', pjson.version);
 

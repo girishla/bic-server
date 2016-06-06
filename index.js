@@ -29,8 +29,10 @@ exports.register = function(server, options, next) {
 
 };
 
-var Package = require("./../package.json");
+var Package = require("./package.json");
 exports.register.attributes = {
   name: 	Package.name,
   version: 	Package.version
 }
+
+

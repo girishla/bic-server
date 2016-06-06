@@ -1,14 +1,14 @@
 {
   "name": "bic-server",
   "version": "0.1.0",
-  "main": "server/server.js",
+  "main": "server.js",
   "dependencies": {
     "bedwetter": "^1.8.2",
     "blipp": "^2.3.0",
     "dogwater": "^0.4.7 ",
     "good": "^6.4.0",
     "good-console": "^5.2.0",
-    "hapi": "^11.1.2",
+    "hapi": "^13.4.1",
     "hapi-swaggered": "^2.4.1",
     "hapi-swaggered-ui": "^2.1.1",
     "hoek": "^4.0.1",
