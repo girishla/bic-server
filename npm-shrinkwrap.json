@@ -1,0 +1,16 @@
+{
+  "name":"bic-server",
+  "version":"0.1.0" ,
+  "dependencies": {
+    "sails-oradb": {
+      "version": "0.1.0",
+      "from": "sails-oradb@0.1.0",
+      "dependencies": {
+        "oracledb": {
+          "version": "1.8.0",
+           "from": "github:bchr02/node-oracledb#prebuild_support"
+            }
+          }
+      }
+  }
+}
