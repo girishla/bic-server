@@ -20,13 +20,17 @@ module.exports = {
     dashboardPath: 'string',
     analysisPath: 'String',
     text: 'string',
-    createdBy:'string',
+    createdBy: 'string',
     createdAt: 'datetime',
     updatedAt: 'datetime',
     comments: {
       collection: 'comments',
       via: 'topicId'
+    },
+    attachments: {
+      collection: 'attachments',
+      via: 'topicId'
     }
-    }
+  }
 
 }

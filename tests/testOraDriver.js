@@ -6,9 +6,9 @@ process.env['PATH'] = path.join(__dirname, '../instantclient') + ';' + process.e
 var oracledb = require('oracledb');
 
 oracledb.getConnection({
-  user: "proteus",
-  password: "proteus",
-  connectString: "lngoxforad004.legal.regn.net:1521/obidev3"
+  user: "NRX1",
+  password: "nrx1pelodbv2",
+  connectString: "pelobidev2.projected.ltd.uk:1521/pelobdv2.projected.ltd.uk"
 }, function(err, connection) {
   if (err) {
     console.error(err.message);

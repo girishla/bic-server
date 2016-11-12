@@ -15,6 +15,7 @@
     "inert": "^3.2.0",
     "jsonfile": "^2.2.3",
     "node-json2html": "^1.0.0",
+    "node-uuid": "^1.4.7",
     "oracledb": "github:bchr02/node-oracledb#prebuild_support",
     "require-directory": "^2.1.1",
     "sails-disk": "^0.10.8",

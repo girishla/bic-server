@@ -1,6 +1,6 @@
 // This is the assets controller. Goal is to serve css, js, partials, images, or bower packages.
 var path = require('path'),
-rootPath = path.normalize(__dirname + '/../..');
+    rootPath = path.normalize(__dirname + '/../..');
 
 module.exports = {
     app: {
@@ -13,6 +13,11 @@ module.exports = {
             directory: { path: rootPath + '/client/assets' }
         }
     },
+    attachments: {
+        handler: {
+            directory: { path: rootPath + '/attachments' }
+        }
+    },
     css: {
         handler: {
             directory: { path: rootPath + '/client/app/css' }
@@ -23,7 +28,7 @@ module.exports = {
             directory: { path: rootPath + '/client/app' }
         }
     },
-  bower_components: {
+    bower_components: {
         handler: {
             directory: { path: rootPath + '/client/bower_components' }
         }

@@ -1,0 +1,971 @@
+{
+  "data": {
+    "comments_topicsid__topics_commentss": [],
+    "topics": [
+      {
+        "text": "sdada",
+        "level1Context": "/shared/Human Resources/_portal/Absence",
+        "level2Context": "/shared/Human Resources/QDR",
+        "level3Context": {
+          "dimRefs": {
+            "CASE%20WHEN%20%22Dim%20-%20Date%22.%22PERIOD%22%20IS%20NOT%20NULL%20%20THEN%20%22Dim%20-%20Date%22.%22PERIOD%22%20%20%20ELSE%20%22Dim%20-%20Date%22.%22PERIOD%22%20%20END": "06/15",
+            "%22Dim%20-%20Date%22.%22YEAR%22": "14/15"
+          },
+          "baseFormula": "\"Fact - Project\".\"AFC_ALL_STAGES_CUM\""
+        },
+        "level1ContextHash": "983362c771eb0f0115d0e74678bb3b4bfa5b96c9",
+        "level2ContextHash": "ba092a2a724ec26a98a8d9825b649bbd64f7beeb",
+        "level3ContextHash": "dfcb89f0879a8f8e7a2bea187bd375e952231c68",
+        "createdAt": "2015-12-24T17:00:43.169Z",
+        "updatedAt": "2016-01-14T16:21:45.832Z",
+        "id": 233
+      },
+      {
+        "text": "Alright my friend",
+        "level1Context": "/shared/Human Resources/_portal/Absence",
+        "level2Context": "/shared/Human Resources/QDR",
+        "level3Context": {
+          "dimRefs": {
+            "CASE%20WHEN%20%22Dim%20-%20Date%22.%22PERIOD%22%20IS%20NOT%20NULL%20%20THEN%20%22Dim%20-%20Date%22.%22PERIOD%22%20%20%20ELSE%20%22Dim%20-%20Date%22.%22PERIOD%22%20%20END": "04/15",
+            "%22Dim%20-%20Date%22.%22YEAR%22": "14/15"
+          },
+          "baseFormula": "\"Fact - Project\".\"AFC_ALL_STAGES_CUM\""
+        },
+        "level1ContextHash": "983362c771eb0f0115d0e74678bb3b4bfa5b96c9",
+        "level2ContextHash": "ba092a2a724ec26a98a8d9825b649bbd64f7beeb",
+        "level3ContextHash": "0a7963fb1c984c940d41b49d36c1dfb056945304",
+        "createdAt": "2015-12-24T18:19:45.606Z",
+        "updatedAt": "2015-12-24T18:19:45.606Z",
+        "id": 238
+      },
+      {
+        "text": "Perfecto",
+        "level1Context": "/shared/Human Resources/_portal/Absence",
+        "level2Context": "",
+        "level3Context": "",
+        "level1ContextHash": "983362c771eb0f0115d0e74678bb3b4bfa5b96c9",
+        "level2ContextHash": "",
+        "level3ContextHash": "",
+        "createdAt": "2016-01-14T15:47:52.097Z",
+        "updatedAt": "2016-01-27T17:01:28.266Z",
+        "id": 239
+      },
+      {
+        "text": "This is Awesome!!!",
+        "level1Context": "/users/weblogic/_portal",
+        "level2Context": "",
+        "level3Context": "",
+        "level1ContextHash": "1a1707e91f2a93d9f7e6437883093e227485f28b",
+        "level2ContextHash": "",
+        "level3ContextHash": "",
+        "createdAt": "2016-10-26T16:30:47.574Z",
+        "updatedAt": "2016-10-26T16:30:47.574Z",
+        "id": 243
+      },
+      {
+        "text": "Are we sure this is right ?",
+        "level1Context": "/users/weblogic/_portal",
+        "level2Context": "/users/weblogic/Dummy",
+        "level3Context": {
+          "dimRefs": {
+            "%22Date%22.%22Year%22": "2015"
+          },
+          "baseFormula": "\"Fact\".\"AFC All Stages\""
+        },
+        "level1ContextHash": "1a1707e91f2a93d9f7e6437883093e227485f28b",
+        "level2ContextHash": "03fd85a705cb1be6b5ee9767d6c6da2444c2e7b8",
+        "level3ContextHash": "a19cf78c5cec95c595135987f4862b2dcad27df0",
+        "createdAt": "2016-10-26T16:31:20.566Z",
+        "updatedAt": "2016-10-26T17:19:03.404Z",
+        "id": 244
+      },
+      {
+        "text": "silly",
+        "level1Context": "/users/weblogic/_portal",
+        "level2Context": "/users/weblogic/Dummy",
+        "level3Context": {
+          "dimRefs": {
+            "%22Date%22.%22Year%22": "2016"
+          },
+          "baseFormula": "\"Fact\".\"AFC Approved Stages\""
+        },
+        "level1ContextHash": "1a1707e91f2a93d9f7e6437883093e227485f28b",
+        "level2ContextHash": "03fd85a705cb1be6b5ee9767d6c6da2444c2e7b8",
+        "level3ContextHash": "9a1d6ac5616718f24cb65a7659c27ea180fb6d54",
+        "createdAt": "2016-10-26T17:19:34.440Z",
+        "updatedAt": "2016-10-27T21:10:23.396Z",
+        "id": 245
+      },
+      {
+        "text": "Hamburger pork belly andouille, turducken sausage turkey corned beef leberkas beef ribs filet mignon pig. Ground round tenderloin shoulder spare ribs flank bresaola corned beef short ribs. Cupim kielbasa ham hock shankle, leberkas landjaeger biltong prosciutto. Doner spare ribs burgdoggen, tongue pork belly andouille alcatra filet mignon cupim jerky tail kielbasa. Cow pastrami tail, pork belly picanha hamburger flank drumstick pancetta tri-tip short loin doner.\n\nHamburger pork belly andouille, turducken sausage turkey corned beef leberkas beef ribs filet mignon pig. Ground round tenderloin shoulder spare ribs flank bresaola corned beef short ribs. Cupim kielbasa ham hock shankle, leberkas landjaeger biltong prosciutto. Doner spare ribs burgdoggen, tongue pork belly andouille alcatra filet mignon cupim jerky tail kielbasa. Cow pastrami tail, pork belly picanha hamburger flank drumstick pancetta tri-tip short loin doner.\n\nHamburger pork belly andouille, turducken sausage turkey corned beef leberkas beef ribs filet mignon pig. Ground round tenderloin shoulder spare ribs flank bresaola corned beef short ribs. Cupim kielbasa ham hock shankle, leberkas landjaeger biltong prosciutto. Doner spare ribs burgdoggen, tongue pork belly andouille alcatra filet mignon cupim jerky tail kielbasa. Cow pastrami tail, pork belly picanha hamburger flank drumstick pancetta tri-tip short loin doner.\n\nHamburger pork belly andouille, turducken sausage turkey corned beef leberkas beef ribs filet mignon pig. Ground round tenderloin shoulder spare ribs flank bresaola corned beef short ribs. Cupim kielbasa ham hock shankle, leberkas landjaeger biltong prosciutto. Doner spare ribs burgdoggen, tongue pork belly andouille alcatra filet mignon cupim jerky tail kielbasa. Cow pastrami tail, pork belly picanha hamburger flank drumstick pancetta tri-tip short loin doner.",
+        "level1Context": "/users/weblogic/_portal",
+        "level2Context": "",
+        "level3Context": "",
+        "level1ContextHash": "1a1707e91f2a93d9f7e6437883093e227485f28b",
+        "level2ContextHash": "",
+        "level3ContextHash": "",
+        "createdAt": "2016-10-26T17:21:34.587Z",
+        "updatedAt": "2016-10-26T17:21:34.587Z",
+        "id": 247
+      },
+      {
+        "text": "new mutated DOM",
+        "level1Context": "/users/weblogic/_portal",
+        "level2Context": "/users/weblogic/Dummy",
+        "level3Context": {
+          "dimRefs": {
+            "%22Date%22.%22Year%22": "2016",
+            "%22Date%22.%22Half%20Year%22": "2016%20Half2",
+            "%22Date%22.%22Quarter%22": "2016%20Q%204"
+          },
+          "baseFormula": "\"Fact\".\"AFC Approved Stages\""
+        },
+        "level1ContextHash": "1a1707e91f2a93d9f7e6437883093e227485f28b",
+        "level2ContextHash": "03fd85a705cb1be6b5ee9767d6c6da2444c2e7b8",
+        "level3ContextHash": "6a24de756bab1df27438efb02bee2482e23ea0c6",
+        "createdAt": "2016-10-27T09:46:31.643Z",
+        "updatedAt": "2016-10-27T09:46:31.643Z",
+        "id": 248
+      },
+      {
+        "text": "amazing",
+        "level1Context": "/users/weblogic/_portal",
+        "level2Context": "/users/weblogic/Dummy",
+        "level3Context": {
+          "dimRefs": {
+            "%22Date%22.%22Year%22": "2015"
+          },
+          "baseFormula": "\"Fact\".\"CA AFC All\""
+        },
+        "level1ContextHash": "1a1707e91f2a93d9f7e6437883093e227485f28b",
+        "level2ContextHash": "03fd85a705cb1be6b5ee9767d6c6da2444c2e7b8",
+        "level3ContextHash": "87713fd2dab960bae37055fd7963d1794c8a5e8d",
+        "createdAt": "2016-10-27T11:07:32.161Z",
+        "updatedAt": "2016-10-27T11:07:32.161Z",
+        "id": 249
+      },
+      {
+        "text": "ok",
+        "level1Context": "/users/weblogic/_portal",
+        "level2Context": "/users/weblogic/Dummy",
+        "level3Context": {
+          "dimRefs": {
+            "%22Date%22.%22Year%22": "2016"
+          },
+          "baseFormula": "\"Fact\".\"CA AFC All\""
+        },
+        "level1ContextHash": "1a1707e91f2a93d9f7e6437883093e227485f28b",
+        "level2ContextHash": "03fd85a705cb1be6b5ee9767d6c6da2444c2e7b8",
+        "level3ContextHash": "51c7e4e5ac0c2a350357e11813ea0a21eb4c2712",
+        "createdAt": "2016-10-27T17:10:19.145Z",
+        "updatedAt": "2016-10-27T17:10:19.145Z",
+        "id": 250
+      },
+      {
+        "text": "new Topic",
+        "level1Context": "/users/weblogic/_portal",
+        "level2Context": "/users/weblogic/Dummy",
+        "level3Context": {
+          "dimRefs": {
+            "%22Date%22.%22Year%22": "2016"
+          },
+          "baseFormula": "\"Fact\".\"AFC Approved Stages\""
+        },
+        "level1ContextHash": "1a1707e91f2a93d9f7e6437883093e227485f28b",
+        "level2ContextHash": "03fd85a705cb1be6b5ee9767d6c6da2444c2e7b8",
+        "level3ContextHash": "9a1d6ac5616718f24cb65a7659c27ea180fb6d54",
+        "createdAt": "2016-10-27T21:11:01.417Z",
+        "updatedAt": "2016-10-27T21:11:01.417Z",
+        "id": 251
+      },
+      {
+        "text": "@girish can yoiu please look into this ?",
+        "level1Context": "/users/weblogic/_portal",
+        "level2Context": "/users/weblogic/Dummy",
+        "level3Context": {
+          "dimRefs": {
+            "%22Date%22.%22Year%22": "2016"
+          },
+          "baseFormula": "\"Fact\".\"CA AFC All\""
+        },
+        "level1ContextHash": "1a1707e91f2a93d9f7e6437883093e227485f28b",
+        "level2ContextHash": "03fd85a705cb1be6b5ee9767d6c6da2444c2e7b8",
+        "level3ContextHash": "51c7e4e5ac0c2a350357e11813ea0a21eb4c2712",
+        "createdAt": "2016-10-28T14:37:59.407Z",
+        "updatedAt": "2016-10-28T14:37:59.407Z",
+        "id": 253
+      },
+      {
+        "text": "bimboooo",
+        "level1Context": "/users/weblogic/_portal",
+        "level2Context": "/users/weblogic/Dummy",
+        "level3Context": {
+          "dimRefs": {
+            "%22Date%22.%22Year%22": "2016"
+          },
+          "baseFormula": "\"Fact\".\"AFC All Stages\""
+        },
+        "level1ContextHash": "1a1707e91f2a93d9f7e6437883093e227485f28b",
+        "level2ContextHash": "03fd85a705cb1be6b5ee9767d6c6da2444c2e7b8",
+        "level3ContextHash": "70693bea0c4951cc2fb5efe2db906ce7570567fd",
+        "createdAt": "2016-10-28T18:05:14.404Z",
+        "updatedAt": "2016-10-28T18:05:14.404Z",
+        "id": 254
+      },
+      {
+        "text": "chicku",
+        "level1Context": "/users/weblogic/_portal",
+        "level2Context": "/users/weblogic/Dummy",
+        "level3Context": {
+          "dimRefs": {
+            "%22Date%22.%22Year%22": "2016"
+          },
+          "baseFormula": "\"Fact\".\"AFC All Stages\""
+        },
+        "level4Context": {},
+        "level1ContextHash": "1a1707e91f2a93d9f7e6437883093e227485f28b",
+        "level2ContextHash": "03fd85a705cb1be6b5ee9767d6c6da2444c2e7b8",
+        "level3ContextHash": "70693bea0c4951cc2fb5efe2db906ce7570567fd",
+        "createdAt": "2016-10-28T18:06:54.018Z",
+        "updatedAt": "2016-10-28T18:06:54.018Z",
+        "id": 255
+      },
+      {
+        "text": "pretty",
+        "level1Context": "/users/weblogic/_portal",
+        "level2Context": "/users/weblogic/Dummy",
+        "level3Context": {
+          "dimRefs": {
+            "%22Date%22.%22Year%22": "2016"
+          },
+          "baseFormula": "\"Fact\".\"AFC All Stages\""
+        },
+        "level4Context": {},
+        "level1ContextHash": "1a1707e91f2a93d9f7e6437883093e227485f28b",
+        "level2ContextHash": "03fd85a705cb1be6b5ee9767d6c6da2444c2e7b8",
+        "level3ContextHash": "70693bea0c4951cc2fb5efe2db906ce7570567fd",
+        "createdAt": "2016-10-28T18:12:16.572Z",
+        "updatedAt": "2016-10-28T18:12:16.572Z",
+        "id": 256
+      },
+      {
+        "text": "aaaa",
+        "level1Context": "/users/weblogic/_portal",
+        "level2Context": "/users/weblogic/Dummy",
+        "level3Context": {
+          "dimRefs": {
+            "%22Date%22.%22Year%22": "2016"
+          },
+          "baseFormula": "\"Fact\".\"AFC All Stages\""
+        },
+        "level4Context": {},
+        "level1ContextHash": "1a1707e91f2a93d9f7e6437883093e227485f28b",
+        "level2ContextHash": "03fd85a705cb1be6b5ee9767d6c6da2444c2e7b8",
+        "level3ContextHash": "70693bea0c4951cc2fb5efe2db906ce7570567fd",
+        "createdAt": "2016-10-28T18:16:58.138Z",
+        "updatedAt": "2016-10-28T18:16:58.138Z",
+        "id": 257
+      },
+      {
+        "text": "giriiiiiii",
+        "level1Context": "/users/weblogic/_portal",
+        "level2Context": "/users/weblogic/Dummy",
+        "level3Context": {
+          "dimRefs": {
+            "%22Date%22.%22Year%22": "2016"
+          },
+          "baseFormula": "\"Fact\".\"AFC All Stages\""
+        },
+        "level4Context": {},
+        "level1ContextHash": "1a1707e91f2a93d9f7e6437883093e227485f28b",
+        "level2ContextHash": "03fd85a705cb1be6b5ee9767d6c6da2444c2e7b8",
+        "level3ContextHash": "70693bea0c4951cc2fb5efe2db906ce7570567fd",
+        "createdAt": "2016-10-28T18:46:34.133Z",
+        "updatedAt": "2016-10-28T18:46:34.133Z",
+        "id": 258
+      },
+      {
+        "text": "yyy",
+        "level1Context": "/users/weblogic/_portal",
+        "level2Context": "/users/weblogic/Dummy",
+        "level3Context": {
+          "dimRefs": {
+            "%22Date%22.%22Year%22": "2015"
+          },
+          "baseFormula": "\"Fact\".\"AFC Approved Stages\""
+        },
+        "level4Context": {},
+        "level1ContextHash": "1a1707e91f2a93d9f7e6437883093e227485f28b",
+        "level2ContextHash": "03fd85a705cb1be6b5ee9767d6c6da2444c2e7b8",
+        "level3ContextHash": "f5b4c22bf9fcd2ab9de2dd649919823443774d44",
+        "createdAt": "2016-10-28T18:51:13.852Z",
+        "updatedAt": "2016-10-28T18:51:13.852Z",
+        "id": 259
+      },
+      {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula. Pellentesque aliquam quam vel dolor. Nunc adipiscing. Sed quam odio, tempus ac, aliquam molestie, varius ac, tellus. Vestibulum ut nulla aliquam risus rutrum interdum. Pellentesque lorem. Curabitur sit amet erat quis risus feugiat viverra. Pellentesque augue justo, sagittis et, lacinia at, venenatis non, arcu. Nunc nec libero. In cursus dictum risus. Etiam tristique nisl a nulla. Ut a orci. Curabitur dolor nunc, egestas at, accumsan at, malesuada nec, magna.",
+        "level1Context": "/shared/Model Office/_portal/Financial Performance",
+        "level2Context": "",
+        "level3Context": "",
+        "level4Context": "",
+        "level1ContextHash": "96a0d6356b6aa70605591e7b7ad4731a1fe35dc2",
+        "level2ContextHash": "",
+        "level3ContextHash": "",
+        "level4ContextHash": "",
+        "createdAt": "2016-11-01T14:06:01.383Z",
+        "updatedAt": "2016-11-01T14:11:55.081Z",
+        "id": 453
+      },
+      {
+        "text": "asdaaa",
+        "level1Context": "/shared/Model Office/_portal/Financial Performance",
+        "level2Context": "/shared/Model Office/Scorecard POC/Financial Performance/Reports/Reported Financial Position",
+        "level3Context": {
+          "dimRefs": {
+            "%22Delivery%20Group%22.%22Delivery%20Group%22": "IP%20Great%20Western%20%26%20Crossrail",
+            "CASE%20%20WHEN%20%22Project%22.%22Funding%20Category%22%20%3D%20%27Renewals%27%20THEN%20%271.Renewals%27%20WHEN%20%22Project%22.%22Funding%20Category%22%20IN%20%28%27Enhancements%27%29%20THEN%20%272.Enhancements%27%20ELSE%20%273.Other%27%20END": "3.Other",
+            "%20CASE%20%20WHEN%20%22Project%22.%22Funding%20Category%22%20IS%20NULL%20THEN%20%27Unallocated%27%20ELSE%20%22Project%22.%22Funding%20Category%22%20END%20": "OP%20non-WIP%20accounts",
+            "%28%22Fact%22.%22FY%20Forecast%22-%22Fact%22.%22FY%20Budget%22%29/1000": 7184.13991
+          },
+          "baseFormula": "\"NR POC - MFMA Fund\".\"Fact\".\"FY Budget\"/1000"
+        },
+        "level4Context": {
+          "filters": {
+            "bicprompt_NR_Period": "07/17",
+            "bicprompt_NR_Group": "Not Selected"
+          }
+        },
+        "level1ContextHash": "96a0d6356b6aa70605591e7b7ad4731a1fe35dc2",
+        "level2ContextHash": "b457996eb3be6d6ca0003d4828c18a3124eda64b",
+        "level3ContextHash": "4b600aa225a99fe1e0d7ac6485833f5789dcba07",
+        "level4ContextHash": "0928ea38cc578e1f4a72db760748a3a47dfb68ad",
+        "createdAt": "2016-11-01T16:07:55.962Z",
+        "updatedAt": "2016-11-01T16:07:55.962Z",
+        "id": 461
+      },
+      {
+        "text": "@girish why is this number wong ?",
+        "level1Context": "/shared/Model Office/_portal/Financial Performance",
+        "level2Context": "/shared/Model Office/Scorecard POC/Financial Performance/Reports/Reported Financial Position",
+        "level3Context": {
+          "dimRefs": {
+            "%22Delivery%20Group%22.%22Delivery%20Group%22": "IP%20Great%20Western%20%26%20Crossrail",
+            "CASE%20%20WHEN%20%22Project%22.%22Funding%20Category%22%20%3D%20%27Renewals%27%20THEN%20%271.Renewals%27%20WHEN%20%22Project%22.%22Funding%20Category%22%20IN%20%28%27Enhancements%27%29%20THEN%20%272.Enhancements%27%20ELSE%20%273.Other%27%20END": "3.Other",
+            "%20CASE%20%20WHEN%20%22Project%22.%22Funding%20Category%22%20IS%20NULL%20THEN%20%27Unallocated%27%20ELSE%20%22Project%22.%22Funding%20Category%22%20END%20": "OP%20non-WIP%20accounts",
+            "%28%22Fact%22.%22FY%20Forecast%22-%22Fact%22.%22FY%20Budget%22%29/1000": 7184.13991
+          },
+          "baseFormula": "\"NR POC - MFMA Fund\".\"Fact\".\"FY Budget\"/1000"
+        },
+        "level4Context": {
+          "filters": {
+            "bicprompt_NR_Period": "07/17",
+            "bicprompt_NR_Group": "Not Selected"
+          }
+        },
+        "level1ContextHash": "96a0d6356b6aa70605591e7b7ad4731a1fe35dc2",
+        "level2ContextHash": "b457996eb3be6d6ca0003d4828c18a3124eda64b",
+        "level3ContextHash": "4b600aa225a99fe1e0d7ac6485833f5789dcba07",
+        "level4ContextHash": "0928ea38cc578e1f4a72db760748a3a47dfb68ad",
+        "createdAt": "2016-11-01T16:09:34.464Z",
+        "updatedAt": "2016-11-01T16:09:34.464Z",
+        "id": 462
+      }
+    ],
+    "comments_topicid__topics_comments": [
+      {
+        "comments_topicId": 145,
+        "topics_comments": 233,
+        "id": 145
+      },
+      {
+        "comments_topicId": 152,
+        "topics_comments": 233,
+        "id": 152
+      },
+      {
+        "comments_topicId": 153,
+        "topics_comments": 239,
+        "id": 153
+      },
+      {
+        "comments_topicId": 154,
+        "topics_comments": 239,
+        "id": 154
+      },
+      {
+        "comments_topicId": 158,
+        "topics_comments": 245,
+        "id": 158
+      },
+      {
+        "comments_topicId": 159,
+        "topics_comments": 245,
+        "id": 159
+      },
+      {
+        "comments_topicId": 160,
+        "topics_comments": 245,
+        "id": 160
+      },
+      {
+        "comments_topicId": 211,
+        "topics_comments": 453,
+        "id": 211
+      },
+      {
+        "comments_topicId": 212,
+        "topics_comments": 453,
+        "id": 212
+      }
+    ],
+    "comments": [
+      {
+        "text": "comment 2 whaaaaaaaaaaaaaaaaaaaaaaaaat",
+        "topicId": 186,
+        "createdAt": "2015-12-21T10:42:54.770Z",
+        "updatedAt": "2015-12-21T10:42:54.770Z",
+        "id": 22
+      },
+      {
+        "text": "comment 2 whaaaaaaaaaaaaaaaaaaaaaaaaat",
+        "topicId": 178,
+        "createdAt": "2015-12-21T10:43:42.768Z",
+        "updatedAt": "2015-12-21T10:43:42.768Z",
+        "id": 23
+      },
+      {
+        "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam",
+        "createdAt": "2015-12-21T23:17:48.267Z",
+        "updatedAt": "2015-12-21T23:17:48.267Z",
+        "id": 67
+      },
+      {
+        "text": "sdsd",
+        "createdAt": "2015-12-24T11:44:54.438Z",
+        "updatedAt": "2015-12-24T11:44:54.438Z",
+        "id": 79
+      },
+      {
+        "text": "asdas",
+        "createdAt": "2015-12-24T13:18:46.579Z",
+        "updatedAt": "2015-12-24T13:18:46.579Z",
+        "id": 80
+      },
+      {
+        "text": "Every md-menu must specify exactly two child elements. The first element is what is left in the DOM and is used to open the menu. This element is called the trigger element. The trigger element's scope has access to $mdOpenMenu($event) which it may call to open the menu. By passing $event as argument, the corresponding event is stopped from propagating up the DOM-tree.",
+        "createdAt": "2015-12-24T13:20:10.409Z",
+        "updatedAt": "2015-12-24T13:20:10.409Z",
+        "id": 81
+      },
+      {
+        "text": "Every md-menu must specify exactly two child elements. The first element is what is left in the DOM and is used to open the menu. This element is called the trigger element. The trigger element's scope has access to $mdOpenMenu($event) which it may call to open the menu. By passing $event as argument, the corresponding event is stopped from propagating up the DOM-tree.",
+        "createdAt": "2015-12-24T14:19:39.132Z",
+        "updatedAt": "2015-12-24T14:19:39.132Z",
+        "id": 86
+      },
+      {
+        "text": "babes",
+        "createdAt": "2015-12-24T14:21:35.926Z",
+        "updatedAt": "2015-12-24T14:21:35.926Z",
+        "id": 88
+      },
+      {
+        "text": "My god this is cool",
+        "createdAt": "2015-12-24T14:27:24.813Z",
+        "updatedAt": "2015-12-24T14:27:24.813Z",
+        "id": 90
+      },
+      {
+        "text": "cool",
+        "createdAt": "2015-12-24T15:33:19.061Z",
+        "updatedAt": "2015-12-24T15:33:19.061Z",
+        "id": 91
+      },
+      {
+        "text": "nice",
+        "createdAt": "2015-12-24T15:33:52.578Z",
+        "updatedAt": "2015-12-24T15:33:52.578Z",
+        "id": 92
+      },
+      {
+        "text": "This can be nice but probably not!!!",
+        "createdAt": "2015-12-24T15:34:08.264Z",
+        "updatedAt": "2015-12-24T15:34:08.264Z",
+        "id": 93
+      },
+      {
+        "text": "dasas",
+        "createdAt": "2015-12-24T15:40:33.249Z",
+        "updatedAt": "2015-12-24T15:40:33.249Z",
+        "id": 94
+      },
+      {
+        "text": "dwqw",
+        "createdAt": "2015-12-24T16:08:34.384Z",
+        "updatedAt": "2015-12-24T16:08:34.384Z",
+        "id": 107
+      },
+      {
+        "text": "qweqeq",
+        "createdAt": "2015-12-24T16:08:49.415Z",
+        "updatedAt": "2015-12-24T16:08:49.415Z",
+        "id": 108
+      },
+      {
+        "text": "adfafa",
+        "createdAt": "2015-12-24T16:10:13.900Z",
+        "updatedAt": "2015-12-24T16:10:13.900Z",
+        "id": 109
+      },
+      {
+        "text": "adawda",
+        "createdAt": "2015-12-24T16:10:16.948Z",
+        "updatedAt": "2015-12-24T16:10:16.948Z",
+        "id": 110
+      },
+      {
+        "text": "adawdq",
+        "createdAt": "2015-12-24T16:11:03.406Z",
+        "updatedAt": "2015-12-24T16:11:03.406Z",
+        "id": 111
+      },
+      {
+        "text": "adas",
+        "createdAt": "2015-12-24T16:11:05.445Z",
+        "updatedAt": "2015-12-24T16:11:05.445Z",
+        "id": 112
+      },
+      {
+        "text": "asdas",
+        "createdAt": "2015-12-24T16:11:51.643Z",
+        "updatedAt": "2015-12-24T16:11:51.643Z",
+        "id": 113
+      },
+      {
+        "text": "asdas",
+        "createdAt": "2015-12-24T16:12:07.244Z",
+        "updatedAt": "2015-12-24T16:12:07.244Z",
+        "id": 114
+      },
+      {
+        "text": "asdas",
+        "createdAt": "2015-12-24T16:12:09.526Z",
+        "updatedAt": "2015-12-24T16:12:09.526Z",
+        "id": 115
+      },
+      {
+        "text": "dffffff",
+        "createdAt": "2015-12-24T16:12:12.870Z",
+        "updatedAt": "2015-12-24T16:12:12.870Z",
+        "id": 116
+      },
+      {
+        "text": "dasas",
+        "createdAt": "2015-12-24T16:12:48.913Z",
+        "updatedAt": "2015-12-24T16:12:48.913Z",
+        "id": 117
+      },
+      {
+        "text": "adasa",
+        "createdAt": "2015-12-24T16:15:50.803Z",
+        "updatedAt": "2015-12-24T16:15:50.803Z",
+        "id": 118
+      },
+      {
+        "text": "asdas",
+        "createdAt": "2015-12-24T16:15:53.359Z",
+        "updatedAt": "2015-12-24T16:15:53.359Z",
+        "id": 119
+      },
+      {
+        "text": "qweqw",
+        "createdAt": "2015-12-24T16:16:04.072Z",
+        "updatedAt": "2015-12-24T16:16:04.072Z",
+        "id": 120
+      },
+      {
+        "text": "eqwqeqw",
+        "createdAt": "2015-12-24T16:16:06.630Z",
+        "updatedAt": "2015-12-24T16:16:06.630Z",
+        "id": 121
+      },
+      {
+        "text": "Not working",
+        "createdAt": "2015-12-24T16:18:49.926Z",
+        "updatedAt": "2015-12-24T16:18:49.926Z",
+        "id": 122
+      },
+      {
+        "text": "werwerw",
+        "createdAt": "2015-12-24T16:55:09.606Z",
+        "updatedAt": "2015-12-24T16:55:09.606Z",
+        "id": 138
+      },
+      {
+        "text": "efewwfw",
+        "createdAt": "2015-12-24T16:55:16.598Z",
+        "updatedAt": "2015-12-24T16:55:16.598Z",
+        "id": 139
+      },
+      {
+        "text": "wwwww",
+        "createdAt": "2015-12-24T16:55:29.964Z",
+        "updatedAt": "2015-12-24T16:55:29.964Z",
+        "id": 140
+      },
+      {
+        "text": "The spec isn't clear on this. It just say \"terminate these steps\". I think a 404 is much safer option than 200 without the CORS headers. 400 is not appropriate here as there is nothing wrong with the request.\n\nIs there any other system we can look at to see how they handle this? Also, if the request is missing some of the required request headers we can't even look up if the route exists and a 200 is misleading.",
+        "createdAt": "2015-12-24T17:19:09.360Z",
+        "updatedAt": "2015-12-24T17:19:09.360Z",
+        "id": 145
+      },
+      {
+        "text": "werwew",
+        "createdAt": "2015-12-24T18:07:26.828Z",
+        "updatedAt": "2015-12-24T18:07:26.828Z",
+        "id": 147
+      },
+      {
+        "text": "wow",
+        "createdAt": "2016-01-14T16:21:45.805Z",
+        "updatedAt": "2016-01-14T16:21:45.805Z",
+        "id": 152
+      },
+      {
+        "text": "hello",
+        "createdAt": "2016-01-14T16:33:42.440Z",
+        "updatedAt": "2016-01-14T16:33:42.440Z",
+        "id": 153
+      },
+      {
+        "text": "okay, I'll take a look at this first thing tomorrow",
+        "createdAt": "2016-01-27T17:01:28.228Z",
+        "updatedAt": "2016-01-27T17:01:28.228Z",
+        "id": 154
+      },
+      {
+        "text": "Hamburger pork belly andouille, turducken sausage turkey corned beef leberkas beef ribs filet mignon pig. Ground round tenderloin shoulder spare ribs flank bresaola corned beef short ribs. Cupim kielbasa ham hock shankle, leberkas landjaeger biltong prosciutto. Doner spare ribs burgdoggen, tongue pork belly andouille alcatra filet mignon cupim jerky tail kielbasa. Cow pastrami tail, pork belly picanha hamburger flank drumstick pancetta tri-tip short loin doner.",
+        "createdAt": "2016-10-26T17:20:13.335Z",
+        "updatedAt": "2016-10-26T17:20:13.335Z",
+        "id": 157
+      },
+      {
+        "text": "Amazing tool to manage commentary",
+        "createdAt": "2016-10-27T21:09:50.209Z",
+        "updatedAt": "2016-10-27T21:09:50.209Z",
+        "id": 158
+      },
+      {
+        "text": "superp",
+        "createdAt": "2016-10-27T21:10:11.887Z",
+        "updatedAt": "2016-10-27T21:10:11.887Z",
+        "id": 159
+      },
+      {
+        "text": "ok I agree",
+        "createdAt": "2016-10-27T21:10:23.375Z",
+        "updatedAt": "2016-10-27T21:10:23.375Z",
+        "id": 160
+      },
+      {
+        "text": "Perfect",
+        "createdAt": "2016-10-29T12:50:44.218Z",
+        "updatedAt": "2016-10-29T12:50:44.218Z",
+        "id": 162
+      },
+      {
+        "text": "sdaasa",
+        "createdAt": "2016-10-29T14:05:14.874Z",
+        "updatedAt": "2016-10-29T14:05:14.874Z",
+        "id": 163
+      },
+      {
+        "text": "wdss",
+        "createdAt": "2016-10-29T14:23:08.091Z",
+        "updatedAt": "2016-10-29T14:23:08.091Z",
+        "id": 164
+      },
+      {
+        "text": "qwq",
+        "createdAt": "2016-10-29T14:33:36.529Z",
+        "updatedAt": "2016-10-29T14:33:36.529Z",
+        "id": 165
+      },
+      {
+        "text": "qweq",
+        "createdAt": "2016-10-29T14:33:38.962Z",
+        "updatedAt": "2016-10-29T14:33:38.962Z",
+        "id": 166
+      },
+      {
+        "text": "wqerqqw",
+        "createdAt": "2016-10-29T14:33:47.031Z",
+        "updatedAt": "2016-10-29T14:33:47.031Z",
+        "id": 167
+      },
+      {
+        "text": "wdqwf",
+        "createdAt": "2016-10-29T14:35:07.769Z",
+        "updatedAt": "2016-10-29T14:35:07.769Z",
+        "id": 168
+      },
+      {
+        "text": "werw",
+        "createdAt": "2016-10-29T14:35:09.696Z",
+        "updatedAt": "2016-10-29T14:35:09.696Z",
+        "id": 169
+      },
+      {
+        "text": "werwe",
+        "createdAt": "2016-10-29T14:35:12.117Z",
+        "updatedAt": "2016-10-29T14:35:12.117Z",
+        "id": 170
+      },
+      {
+        "text": "zxcz",
+        "createdAt": "2016-10-29T15:07:54.522Z",
+        "updatedAt": "2016-10-29T15:07:54.522Z",
+        "id": 184
+      },
+      {
+        "text": "zczx",
+        "createdAt": "2016-10-29T15:07:57.423Z",
+        "updatedAt": "2016-10-29T15:07:57.423Z",
+        "id": 185
+      },
+      {
+        "text": "asda",
+        "createdAt": "2016-10-29T15:08:19.294Z",
+        "updatedAt": "2016-10-29T15:08:19.294Z",
+        "id": 186
+      },
+      {
+        "text": "adaa",
+        "createdAt": "2016-10-29T15:11:05.476Z",
+        "updatedAt": "2016-10-29T15:11:05.477Z",
+        "id": 190
+      },
+      {
+        "text": "asda",
+        "createdAt": "2016-10-29T15:11:07.836Z",
+        "updatedAt": "2016-10-29T15:11:07.836Z",
+        "id": 191
+      },
+      {
+        "text": "scaa",
+        "createdAt": "2016-10-29T15:11:53.227Z",
+        "updatedAt": "2016-10-29T15:11:53.227Z",
+        "id": 192
+      },
+      {
+        "text": "ascasc",
+        "createdAt": "2016-10-29T15:11:54.893Z",
+        "updatedAt": "2016-10-29T15:11:54.893Z",
+        "id": 193
+      },
+      {
+        "text": "The unset CSS keyword is the combination of the initial and inherit keywords. Like these two other CSS-wide keywords, it can be applied to any CSS property, including the CSS shorthand all. This keyword resets the property to its inherited value if it inherits from its parent or to its initial value if not. In other words, it behaves like the inherit keyword in the first case and like the initial keyword in the second case.",
+        "createdAt": "2016-10-29T15:30:51.491Z",
+        "updatedAt": "2016-10-29T15:30:51.491Z",
+        "id": 198
+      },
+      {
+        "text": "werww",
+        "createdAt": "2016-10-29T20:01:41.627Z",
+        "updatedAt": "2016-10-29T20:01:41.627Z",
+        "id": 199
+      },
+      {
+        "text": "qqwweerr",
+        "createdAt": "2016-10-29T20:11:54.873Z",
+        "updatedAt": "2016-10-29T20:11:54.873Z",
+        "id": 201
+      },
+      {
+        "text": "asd",
+        "createdAt": "2016-10-29T20:15:22.084Z",
+        "updatedAt": "2016-10-29T20:15:22.084Z",
+        "id": 202
+      },
+      {
+        "text": "w",
+        "createdAt": "2016-10-29T20:15:32.329Z",
+        "updatedAt": "2016-10-29T20:15:32.329Z",
+        "id": 203
+      },
+      {
+        "text": "qw",
+        "createdAt": "2016-10-29T20:15:39.554Z",
+        "updatedAt": "2016-10-29T20:15:39.554Z",
+        "id": 204
+      },
+      {
+        "text": "multiple comment issue gone!!!",
+        "createdAt": "2016-10-29T20:16:28.370Z",
+        "updatedAt": "2016-10-29T20:16:28.370Z",
+        "id": 205
+      },
+      {
+        "text": "Im going to check in the changes now. Give me 5 minutes",
+        "createdAt": "2016-10-29T20:21:23.744Z",
+        "updatedAt": "2016-10-29T20:21:23.744Z",
+        "id": 206
+      },
+      {
+        "text": "wqwqwq",
+        "createdAt": "2016-10-31T10:45:07.004Z",
+        "updatedAt": "2016-10-31T10:45:07.004Z",
+        "id": 207
+      },
+      {
+        "text": "yes this is a known issue with the Supplier. Will raise a ticket with them.",
+        "createdAt": "2016-10-31T16:02:38.312Z",
+        "updatedAt": "2016-10-31T16:02:38.312Z",
+        "id": 208
+      },
+      {
+        "text": "qewq",
+        "createdAt": "2016-10-31T20:50:54.741Z",
+        "updatedAt": "2016-10-31T20:50:54.741Z",
+        "id": 209
+      },
+      {
+        "text": "really ?",
+        "createdAt": "2016-11-01T09:54:52.345Z",
+        "updatedAt": "2016-11-01T09:54:52.345Z",
+        "id": 210
+      },
+      {
+        "text": "Today Lorem Ipsum is commonly used in mockups for brochures, layouts, and preliminary website designs. Below is some sample Lorem Ipsum text you may easily copy & paste into your work.",
+        "createdAt": "2016-11-01T14:06:10.204Z",
+        "updatedAt": "2016-11-01T14:06:10.204Z",
+        "id": 211
+      },
+      {
+        "text": "Donec semper, sem nec tristique tempus, justo neque commodo nisl, ut gravida sem tellus suscipit nunc. Aliquam erat volutpat. Ut tincidunt pretium elit. Aliquam pulvinar. Nulla cursus. Suspendisse potenti. Etiam condimentum hendrerit felis. Duis iaculis aliquam enim. Donec dignissim augue vitae orci. Curabitur luctus felis a metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In varius neque at enim. Suspendisse massa nulla, viverra in, bibendum vitae, tempor quis, lorem.",
+        "createdAt": "2016-11-01T14:11:55.055Z",
+        "updatedAt": "2016-11-01T14:11:55.055Z",
+        "id": 212
+      }
+    ]
+  },
+  "schema": {
+    "comments_topicsid__topics_commentss": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "topics_commentss": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "topics",
+        "on": "id",
+        "via": "comments_topicsId"
+      },
+      "comments_topicsId": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "comments",
+        "on": "id",
+        "via": "topics_commentss"
+      }
+    },
+    "topics": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "contextDim": {
+        "type": "string"
+      },
+      "contextDimSHA1": {
+        "type": "string"
+      },
+      "contextFilter": {
+        "type": "string"
+      },
+      "contextFilterSHA1": {
+        "type": "string"
+      },
+      "dashboardPath": {
+        "type": "string"
+      },
+      "analysisPath": {
+        "type": "string"
+      },
+      "text": {
+        "type": "string"
+      },
+      "createdBy": {
+        "type": "string"
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "comments_topicid__topics_comments": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "topics_comments": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "topics",
+        "on": "id",
+        "via": "comments_topicId"
+      },
+      "comments_topicId": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "comments",
+        "on": "id",
+        "via": "topics_comments"
+      }
+    },
+    "comments": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "topicId": {
+        "type": "integer"
+      },
+      "text": {
+        "type": "string"
+      },
+      "createdBy": {
+        "type": "string"
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "topics": {
+      "id": 464
+    },
+    "comments": {
+      "id": 212
+    },
+    "comments_topicsid__topics_commentss": {},
+    "comments_topicid__topics_comments": {
+      "id": 212
+    }
+  }
+}
