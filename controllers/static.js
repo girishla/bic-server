@@ -15,7 +15,7 @@ module.exports = {
     },
     attachments: {
         handler: {
-            directory: { path: rootPath + '/attachments' }
+            directory: { path: rootPath + '/bic-server/attachments' }
         }
     },
     css: {

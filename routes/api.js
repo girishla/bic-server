@@ -157,18 +157,34 @@ module.exports = [
       notes: json2html.transform(jsonDocs.createAttachmentFile, jsonDocTransform),
       handler: function (request, reply) {
 
-        if (request.payload.feedback.img) {
-          var base64Data = request.payload.feedback.img.replace(/^data:image\/png;base64,/, "");
+        if (request.payload.img) {
+          var base64Data = request.payload.img.replace(/^data:image\/png;base64,/, "");
           var uuid = require('node-uuid');
+          var mkdirp = require('mkdirp');
+          var now = new Date();
+          var dateFormat = require('dateformat');          
+          var dayFolderName =dateFormat(now, "yyyymmdd");
 
-          require("fs").writeFile("./attachments/bic_" + uuid.v1() + ".png", base64Data, 'base64', function (err) {
-            if (err) return console.log(err);
-            
-            reply({ url: "bic_" + uuid.v1() + ".png"}).created('/api/attachments');
+          mkdirp('./attachments/' + dayFolderName, function (err) {
+
+            // path exists unless there was an error
+
+            var fileName = "./attachments/" + dayFolderName + "/bic_" + uuid.v1() + ".png"
+
+            require("fs").writeFile(fileName, base64Data, 'base64', function (err) {
+              if (err){
+                  reply(Boom.badRequest('file creation failed.'))
+                  return;
+              } 
+
+              reply({ status: 'OK', message: 'file created.', url:fileName.replace('./attachments/','/attachments/')}).created('/api/attachments');
+            });
+
           });
+
         }
-        else{
-             reply("Nothing to do").code(200);
+        else {
+          reply({ status: 'OK', message: 'No Action taken.' }).code(200);
         }
 
       },
