@@ -367,7 +367,234 @@ module.exports = [
         }
       }
     }
+  },
+
+//********************************************************//
+//***********************FOLLOWERS*****************************//
+//********************************************************//
+
+
+ //  Returns an array of followers associated with topic id. Returns HTTP 200 OK if that topic is found. Returns an HTTP 404 Not Found response if that topic is not found.
+  {
+    method: 'GET',
+    path: '/api/topics/{id}/followers',
+    config: {
+      tags: ['api'], description: 'Get followers for a topic',
+      notes: json2html.transform(jsonDocs.getTopicFollowers, jsonDocTransform),
+      handler: {
+        bedwetter: { prefix: '/api' }
+      }
+    }
+  },
+
+  //Returns the integer number of followers associated with topic id. Returns HTTP 200 OK if that topic is found. Returns an HTTP 404 Not Found response if that topic is not found.
+
+  {
+    method: 'GET',
+    path: '/api/topics/{id}/followers/count',
+    config: {
+      tags: ['api'], description: 'Get followers count for a topic',
+      notes: json2html.transform(jsonDocs.getTopicFollowersCount, jsonDocTransform),
+      handler: {
+        bedwetter: { prefix: '/api', populate: true }
+      }
+    }
+  },
+
+
+
+  //Returns HTTP 204 No Content if comment childId is associated with topic id. Returns an HTTP 404 Not Found response if that topic is not found or that comment is not associated with the topic.
+
+  {
+    method: 'GET',
+    path: '/api/followers/{id}',
+    config: {
+      tags: ['api'], description: 'Get a specific comment under a topic',
+      notes: json2html.transform(jsonDocs.getTopicFollower, jsonDocTransform),
+      handler: {
+        bedwetter: { prefix: '/api' }
+      }
+    }
+  },
+  {
+    method: 'POST',
+    path: '/api/topics/{id}/followers',
+    config: {
+      tags: ['api'], description: 'Create a new Follower under a Topic',
+      notes: json2html.transform(jsonDocs.createFollower, jsonDocTransform),
+      handler: {
+        bedwetter: { prefix: '/api' }
+      },
+      ext: {
+        onPostHandler: {
+          method: function (request, reply) {
+            if (!request.response.isBoom) {
+              request.server.plugins['ChatterSocketConnectionManager'].io.sockets.emit('Follower.Create', request.params.id, request.response.source);
+            }
+            return reply.continue();
+          }
+        }
+      }
+    }
+  },
+
+
+//********************************************************//
+//***********************USERS*****************************//
+//********************************************************//
+
+  {
+    method: 'GET',
+    path: '/api/users',
+    config: {
+      tags: ['api'], description: 'Get list of users',
+      notes: json2html.transform(jsonDocs.findUsers, jsonDocTransform),
+      pre: [function (request, reply) {
+
+        console.log('Processing Pre');
+        return reply();
+
+      }]
+      , handler: {
+        bedwetter: { prefix: '/api', populate: true }
+      },
+      ext: {
+        onPostHandler: {
+          method: function (request, reply) {
+            request.server.plugins['ChatterSocketConnectionManager'].io.sockets.emit('User.getAll', request.response.source);
+            //request.server.log('log', request.response.source);
+            return reply.continue();
+          }
+        }
+      }
+    }
+  },
+
+  //Returns the integer number of users matched with an HTTP 200 OK response.
+  {
+    method: 'GET',
+    path: '/api/users/count',
+
+    config: {
+      tags: ['api'], description: 'Get user count',
+      notes: json2html.transform(jsonDocs.getUserCount, jsonDocTransform),
+      handler: {
+        bedwetter: { prefix: '/api' }
+      }
+    }
+  },
+
+
+  //  Returns user id with an HTTP 200 OK response. Responds with an HTTP 404 Not Found response if the user is not found.
+  {
+    method: 'GET',
+    path: '/api/users/{id}',
+    config: {
+      tags: ['api'], description: 'Get user',
+      notes: json2html.transform(jsonDocs.findUser, jsonDocTransform),
+      handler: {
+        bedwetter: { prefix: '/api', populate: true }
+      },
+      ext: {
+        onPostHandler: {
+          method: function (request, reply) {
+
+            if (!request.response.isBoom) {
+              request.server.plugins['ChatterSocketConnectionManager'].io.sockets.emit('User.Get');
+            }
+
+            return reply.continue();
+          }
+        }
+      }
+    }
+
+  },
+  
+    //Creates a new user using the request payload and returns it with an HTTP 201 Created response.
+
+  {
+    method: 'POST',
+    path: '/api/users',
+    config: {
+      tags: ['api'], description: 'Create a new User',
+      notes: json2html.transform(jsonDocs.createUser, jsonDocTransform),
+      handler: {
+        bedwetter: { prefix: '/api' }
+      },
+      ext: {
+        onPostHandler: {
+          method: function (request, reply) {
+            if (!request.response.isBoom) {
+              request.server.plugins['ChatterSocketConnectionManager'].io.sockets.emit('User.Create', request.response.source);
+            }
+            return reply.continue();
+          }
+        }
+      }
+    }
+  },
+  
+  
+    //Destroys user id. Returns an HTTP 204 No Content response on success. If the user doesn't exist, returns an HTTP 404 Not Found response.
+
+  {
+    method: 'DELETE',
+    path: '/api/users/{id}',
+    config: {
+      tags: ['api'], description: 'Destroy a User',
+      notes: json2html.transform(jsonDocs.deleteUser, jsonDocTransform),
+      handler: {
+        bedwetter: { prefix: '/api' }
+      },
+      ext: {
+        onPostHandler: {
+          method: function (request, reply) {
+            if (!request.response.isBoom) {
+              request.server.plugins['ChatterSocketConnectionManager'].io.sockets.emit('User.Delete', request.params.id);
+              console.log('deleted user');
+
+            }
+            return reply.continue();
+          }
+        }
+      }
+    }
+  },
+  
+    //Updates user id using the request payload (which will typically only contain the attributes to update) and responds with the updated user. Returns an HTTP 200 OK response on success. If the user doesn't exist, returns an HTTP 404 Not Found response
+  {
+    method: 'PATCH',
+    path: '/api/users/{id}',
+    config: {
+      tags: ['api'], description: 'Patch a User',
+      notes: json2html.transform(jsonDocs.patchUser, jsonDocTransform),
+      handler: {
+        bedwetter: { prefix: '/api' }
+      },
+      ext: {
+        onPostHandler: {
+          method: function (request, reply) {
+            if (!request.response.isBoom) {
+              request.server.plugins['ChatterSocketConnectionManager'].io.sockets.emit('User.Patch', request.response.source);
+            }
+            return reply.continue();
+          }
+        }
+      }
+    }
   }
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
 ]
 //Using a non-bedwetter endpoint -  controller handler
 /*

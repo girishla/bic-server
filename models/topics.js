@@ -20,7 +20,8 @@ module.exports = {
     dashboardPath: 'string',
     analysisPath: 'String',
     text: 'string',
-    createdBy: 'string',
+    ownerId:'integer',
+    createdBy: 'integer',
     createdAt: 'datetime',
     updatedAt: 'datetime',
     comments: {
@@ -29,6 +30,10 @@ module.exports = {
     },
     attachments: {
       collection: 'attachments',
+      via: 'topicId'
+    },
+    followers: {
+      collection: 'followers',
       via: 'topicId'
     }
   }

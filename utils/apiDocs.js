@@ -12,7 +12,7 @@ module.exports = {
   },
   getTopicCount: {
     description: 'Get the number of Topics.',
-    returns: 'Number:the integer number of comments associated with topic id. Returns HTTP 200 OK if that topic is found. Returns an HTTP 404 Not Found response if that topic is not found.',
+    returns: 'Number:the integer number of topics. Returns HTTP 200 OK if that topic is found. Returns an HTTP 404 Not Found response if that topic is not found.',
     usage: 'GET /api/topics/count'
   },
   getTopicComments: {
@@ -50,7 +50,7 @@ module.exports = {
     description: 'Creates a new attachment file using the request payload',
     returns: 'Object: Returns the newly created attachment URL with an HTTP 201 Created response.',
     usage: 'POST /api/attachmentfiles'
-  },  
+  },
   associateComment: {
     description: 'Associates comment childId with topic id.',
     returns: 'Returns an HTTP 204 No Content response on success. If the topic or comment are not found, returns an HTTP 404 Not Found response.',
@@ -77,7 +77,56 @@ module.exports = {
     returns: 'Returns an HTTP 204 No Content response on success. If the comment doesnt exist, returns an HTTP 404 Not Found response.',
     usage: 'DELETE /api/comments/{commentId}'
   },
-
+  getTopicFollowers: {
+    description: 'Get followers for a topic',
+    returns: 'Object Array: Array of followers for the topic',
+    usage: 'GET /api/topics/{topicId}/followers'
+  },
+  getTopicFollowersCount: {
+    description: 'Get followers count for a topic',
+    returns: 'Number: The count of followers under a topic',
+    usage: 'GET /api/topics/{topicId}/followers/count'
+  },
+  getTopicFollower: {
+    description: 'Get a specific follower under a topic.',
+    returns: 'Object: A follower object under a topic.Returns HTTP 204 No Content if follower childId is associated with topic id. Returns an HTTP 404 Not Found response if that topic is not found or that follower is not associated with the topic.',
+    usage: 'GET /api/followers/{followerId}'
+  },
+  createFollower: {
+    description: 'Creates a new follower using the request payload and associates that follower with topic id. ',
+    returns: 'Object: Returns the newly created follower with an HTTP 201 Created response. If that topic is not found, returns an HTTP 404 Not Found response',
+    usage: 'POST /api/topics/{topicId}/followers'
+  },
+  findUsers: {
+    description: 'Find one or more Users.',
+    returns: 'Object Array: an array of users with an HTTP 200 OK response',
+    usage: 'GET /api/users?sort=id DESC&skip=0&limit=10&where={"userName":{"contains":"mme"}}'
+  },
+  findUser: {
+    description: 'Find exactly one User',
+    returns: 'Object:  Returns details associated with user id. Returns HTTP 200 OK if that user is found. Returns an HTTP 404 Not Found response if that user is not found.',
+    usage: 'GET  /api/users/{userId}'
+  },
+  getUserCount: {
+    description: 'Get the number of Users.',
+    returns: 'Number:the integer number of users. Returns HTTP 200 OK if that user is found. Returns an HTTP 404 Not Found response if that user is not found.',
+    usage: 'GET /api/users/count'
+  },
+  createUser: {
+    description: 'Creates a new user using the request payload and returns it with an HTTP 201 Created response.',
+    returns: 'Object: The newly created User',
+    usage: 'POST /api/users'
+  },
+  deleteUser: {
+    description: 'Destroys user with id. ',
+    returns: 'Returns an HTTP 204 No Content response on success. If the user doesnt exist, returns an HTTP 404 Not Found response.',
+    usage: 'DELETE /api/users/{userId}'
+  },
+  patchUser: {
+    description: 'Updates user id using the request payload (which will typically only contain the attributes to update)',
+    returns: 'Object: Responds with the updated user. Returns an HTTP 200 OK response on success. If the user doesnt exist, returns an HTTP 404 Not Found response',
+    usage: 'PATCH /api/users/{userId}'
+  }
 
 
 
