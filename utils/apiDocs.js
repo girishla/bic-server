@@ -97,6 +97,11 @@ module.exports = {
     returns: 'Object: Returns the newly created follower with an HTTP 201 Created response. If that topic is not found, returns an HTTP 404 Not Found response',
     usage: 'POST /api/topics/{topicId}/followers'
   },
+  deleteFollower: {
+    description: 'Destroys follower with id. ',
+    returns: 'Returns an HTTP 204 No Content response on success. If the follower doesnt exist, returns an HTTP 404 Not Found response.',
+    usage: 'DELETE /api/followers/{followerId}'
+  },
   findUsers: {
     description: 'Find one or more Users.',
     returns: 'Object Array: an array of users with an HTTP 200 OK response',

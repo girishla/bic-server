@@ -1,0 +1,267 @@
+{
+  "data": {
+    "topics": [
+      {
+        "text": "p7",
+        "level1Context": "/shared/Model Office/_portal/Network Rail",
+        "level2Context": "/shared/Model Office/Scorecard POC/Financial Performance/Reports/Reported Financial Position",
+        "level3Context": "d:dashboard~p:k0u1lqgtjqqp244f~r:o9saeu9lg36bs0kh~v:compoundView!3~v:dvtchart!4",
+        "level4Context": {
+          "filters": {
+            "bicprompt_NR_Period": "07/17"
+          }
+        },
+        "level1ContextHash": "968432ed00cc6a1da6113759c64a62f7c1fa9402",
+        "level2ContextHash": "b457996eb3be6d6ca0003d4828c18a3124eda64b",
+        "level3ContextHash": "ae03bc3b54914f0c8723fa3e77bcc920773265da",
+        "level4ContextHash": "a4067e32ec357337c4c848caa20ecc312eaec6c6",
+        "pinned": true,
+        "createdAt": "2016-12-04T22:33:49.742Z",
+        "updatedAt": "2016-12-04T22:33:49.742Z",
+        "id": 4
+      },
+      {
+        "text": "Bacon ipsum dolor amet salami rump filet mignon biltong tenderloin pig capicola ham. Boudin sirloin tenderloin, ground round beef corned beef pork. Pork chop venison pork belly turkey landjaeger jowl. Meatloaf ball tip cupim, filet mignon cow andouille doner meatball tri-tip. Tongue tri-tip drumstick spare ribs jowl shank shankle corned beef ham kielbasa. Ham beef ribs boudin jerky filet mignon fatback.",
+        "level1Context": "/shared/Model Office/_portal/Network Rail",
+        "level2Context": "/shared/Model Office/Scorecard POC/Financial Performance/Reports/FPM Analysis",
+        "level3Context": "d:dashboard~p:k0u1lqgtjqqp244f~r:rlajsml16336j00p~v:compoundView!3~v:headlineView!2",
+        "level4Context": {
+          "filters": {
+            "bicprompt_NR_Period": "08/17"
+          }
+        },
+        "level1ContextHash": "968432ed00cc6a1da6113759c64a62f7c1fa9402",
+        "level2ContextHash": "64e5d83b2ec2d3b93ebf5053a0c347344622ef9f",
+        "level3ContextHash": "ec743b0f4292219750b0c63a89273d5ecf12b392",
+        "level4ContextHash": "547d958d322b4f41b19a302bae360b86b4d7486c",
+        "pinned": true,
+        "createdAt": "2016-12-05T10:37:21.836Z",
+        "updatedAt": "2016-12-05T10:37:21.836Z",
+        "id": 6
+      }
+    ],
+    "users": [],
+    "comments_topicid__topics_comments": [],
+    "attachments_topicid__topics_attachments": [],
+    "followers_topicid__topics_followers": [],
+    "attachments": [],
+    "comments": [],
+    "followers": []
+  },
+  "schema": {
+    "topics": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "contextDim": {
+        "type": "string"
+      },
+      "contextDimSHA1": {
+        "type": "string"
+      },
+      "contextFilter": {
+        "type": "string"
+      },
+      "contextFilterSHA1": {
+        "type": "string"
+      },
+      "dashboardPath": {
+        "type": "string"
+      },
+      "analysisPath": {
+        "type": "string"
+      },
+      "text": {
+        "type": "string"
+      },
+      "ownerId": {
+        "type": "integer"
+      },
+      "createdBy": {
+        "type": "integer"
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "users": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "userName": {
+        "type": "string"
+      },
+      "userLogin": {
+        "type": "string"
+      },
+      "userEmail": {
+        "type": "string"
+      },
+      "createdBy": {
+        "type": "integer"
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "comments_topicid__topics_comments": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "topics_comments": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "topics",
+        "on": "id",
+        "via": "comments_topicId"
+      },
+      "comments_topicId": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "comments",
+        "on": "id",
+        "via": "topics_comments"
+      }
+    },
+    "attachments_topicid__topics_attachments": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "topics_attachments": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "topics",
+        "on": "id",
+        "via": "attachments_topicId"
+      },
+      "attachments_topicId": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "attachments",
+        "on": "id",
+        "via": "topics_attachments"
+      }
+    },
+    "followers_topicid__topics_followers": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "topics_followers": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "topics",
+        "on": "id",
+        "via": "followers_topicId"
+      },
+      "followers_topicId": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "followers",
+        "on": "id",
+        "via": "topics_followers"
+      }
+    },
+    "attachments": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "topicId": {
+        "type": "integer"
+      },
+      "attachmentURL": {
+        "type": "string"
+      },
+      "createdBy": {
+        "type": "string"
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "comments": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "topicId": {
+        "type": "integer"
+      },
+      "text": {
+        "type": "string"
+      },
+      "createdBy": {
+        "type": "string"
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "followers": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "topicId": {
+        "type": "integer"
+      },
+      "userId": {
+        "type": "integer"
+      },
+      "createdBy": {
+        "type": "string"
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "attachments": {},
+    "comments": {},
+    "followers": {},
+    "topics": {
+      "id": 6
+    },
+    "users": {},
+    "comments_topicid__topics_comments": {},
+    "attachments_topicid__topics_attachments": {},
+    "followers_topicid__topics_followers": {}
+  }
+}

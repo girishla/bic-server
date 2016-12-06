@@ -437,7 +437,30 @@ module.exports = [
       }
     }
   },
+  //Destroys Follower with id. Returns an HTTP 204 No Content response on success. If the follower doesn't exist, returns an HTTP 404 Not Found response.
 
+  {
+    method: 'DELETE',
+    path: '/api/followers/{id}',
+    config: {
+      tags: ['api'], description: 'Destroy a Follower',
+      notes: json2html.transform(jsonDocs.deleteFollower, jsonDocTransform),
+      handler: {
+        bedwetter: { prefix: '/api' }
+      },
+      ext: {
+        onPostHandler: {
+          method: function (request, reply) {
+            if (!request.response.isBoom) {
+              request.server.plugins['ChatterSocketConnectionManager'].io.sockets.emit('Follower.Delete', request.params.id);
+
+            }
+            return reply.continue();
+          }
+        }
+      }
+    }
+  },
 
 //********************************************************//
 //***********************USERS*****************************//
